@@ -1,0 +1,18 @@
+.blog {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.title {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 420px));
+  justify-content: space-between;
+  gap: 20px;
+}
