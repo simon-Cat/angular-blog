@@ -10,3 +10,8 @@
   font-size: 20px;
   color: #fff;
 }
+
+.link_active {
+  color: #5d7fec;
+  transition: color 0.3s ease;
+}
