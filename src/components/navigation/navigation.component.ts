@@ -9,4 +9,6 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
   styleUrl: './navigation.component.css'
 })
 
-export class Navigation {}
+export class Navigation {
+  isUserAuthorized = true
+}
