@@ -2,27 +2,50 @@
   <ul class="list">
     @if (!isUserAuthorized) {
     <li class="item">
-      <a 
+      <a
+        routerLink="/register"
+        routerLinkActive="link_active"
+        ariaCurrentWhenActive="page"
+        class="link"
+        >Регистрация</a
+      >
+    </li>
+    <li class="item">
+      <a
+        routerLink="/login"
+        routerLinkActive="link_active"
+        ariaCurrentWhenActive="page"
+        class="link"
+        >Вход</a
+      >
+    </li>
+    } @else {
+    <li class="item">
+      <a
         routerLink="/posts"
         routerLinkActive="link_active"
         ariaCurrentWhenActive="page"
         class="link"
-      >Регистрация</a>
+        >Статьи</a
+      >
     </li>
     <li class="item">
-      <a 
-        routerLink="/about" routerLinkActive="link_active" ariaCurrentWhenActive="page" class="link">Вход</a>
-    </li>
-    }
-    @else {
-    <li class="item">
-      <a routerLink="/posts" routerLinkActive="link_active" ariaCurrentWhenActive="page" class="link">Статьи</a>
-    </li>
-    <li class="item">
-      <a routerLink="/about" routerLinkActive="link_active" ariaCurrentWhenActive="page" class="link">О сайте</a>
+      <a
+        routerLink="/about"
+        routerLinkActive="link_active"
+        ariaCurrentWhenActive="page"
+        class="link"
+        >О сайте</a
+      >
     </li>
     <li class="item">
-      <a routerLink="/contacts" routerLinkActive="link_active" ariaCurrentWhenActive="page" class="link">Контакты</a>
+      <a
+        routerLink="/contacts"
+        routerLinkActive="link_active"
+        ariaCurrentWhenActive="page"
+        class="link"
+        >Контакты</a
+      >
     </li>
 
     }
